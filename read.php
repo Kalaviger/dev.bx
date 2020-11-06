@@ -9,12 +9,14 @@ function ConsoleReader(string $data){
 
         $input = (bool)$input;
 
-    } else if (is_numeric($input)) {
-
-        $input = +$input;
-
     } else {
-        $input = (string)$input;
+        if (is_numeric($input)) {
+
+            $input = +$input;
+
+        } else {
+            $input = (string)$input;
+        }
     }
     var_dump($input);
 
@@ -22,7 +24,8 @@ function ConsoleReader(string $data){
 }
 
 
-function sumLogic(string $val){
+function sumLogic(string $val)
+{
 
     $arr = explode(" ", $val);
 
@@ -32,6 +35,16 @@ function sumLogic(string $val){
     }
     $sum = array_sum($arr);
 
-    return $sum;
+    if ($sum != 0) {
 
+        echo "Сумма = $sum";
+
+    } else {
+
+        exit('Буквы использовать нельзя!');
+
+
+    }
+
+    return $sum;
 }

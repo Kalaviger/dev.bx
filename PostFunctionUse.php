@@ -4,9 +4,9 @@ require_once 'read.php';
 
 
 
-$first = ConsoleReader("Ведите числа");
+$first = ConsoleReader("Это Функция сумматор, введите желаемое количество чисел, каждое через пробел");
 
-echo 'Сумма чисел'.SumLogic($first);
+echo SumLogic($first);
 
 
 
