@@ -2,7 +2,7 @@
 
 function ConsoleReader(string $data){
 
-    echo $data . ":";
+    echo $input . ":";
     $input = trim(fgets(STDIN));
 
     if ($input === true || $input === false) {
@@ -24,7 +24,7 @@ function ConsoleReader(string $data){
 }
 
 
-function sumLogic(string $val)
+/* function sumLogic(string $val)
 {
 
     $arr = explode(" ", $val);
@@ -48,3 +48,4 @@ function sumLogic(string $val)
 
     return $sum;
 }
+*/

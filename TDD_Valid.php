@@ -3,7 +3,9 @@
 require_once 'read.php';
 require_once 'PostFunctionUse.php';
 
-echo 'ведите дане для проверки';
+
+echo 'Введите данные для проверки';
+
 
 function TddTest()
 {
@@ -12,37 +14,43 @@ function TddTest()
     switch ($vhodnie) {
 
     case'true':
-        print 'роверка на True пройдена';
+        echo 'Ваши данные '.$vhodnie.PHP_EOL.'Совпали с тест кейсом true'.PHP_EOL;
+        echo 'Поздравляю тест пройден!';
         return $vhodnie;
         break;
 
         case'false':
-            print 'роверка на false пройдена';
+            echo 'Ваши данные '.$vhodnie.PHP_EOL.'Совпали с тест кейсом false'.PHP_EOL;
+            echo 'Поздравляю тест пройден!';
             return $vhodnie;
             break;
 
         case'!stop':
-            print 'роверка на !stop пройдена';
+            echo 'Ваши данные '.$vhodnie.PHP_EOL.'Совпали с тест кейсом !stop'.PHP_EOL;
+            echo 'Поздравляю тест пройден!';
             return null;
             break;
 
         case'1.3':
-            print 'роверка на 1.3 пройдена';
+            echo 'Ваши данные '.$vhodnie.PHP_EOL.'Совпали с тест кейсом 1.3'.PHP_EOL;
+            echo 'Поздравляю тест пройден!';
             return $vhodnie;
             break;
 
         case'test':
-            print 'роверка на test пройдена';
+            echo 'Ваши данные '.$vhodnie.PHP_EOL.'Совпали с тест кейсом test'.PHP_EOL;
+            echo 'Поздравляю тест пройден!';
             return $vhodnie;
             break;
 
         case'1':
-            print 'роверка на 1 пройдена';
+            echo 'Ваши данные 1'.$vhodnie.PHP_EOL.'Совпали с тест кейсом 1'.PHP_EOL;
+            echo 'Поздравляю тест пройден!';
             return $vhodnie;
             break;
 
     default:
-        print 'Ни одной проверки не прошло';
+        print 'Не выявлено соответствий с тест кейсами';
         break;
 }
 
