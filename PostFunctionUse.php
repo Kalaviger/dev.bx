@@ -1,12 +1,9 @@
 <?php
 
 require_once 'read.php';
+require_once 'TDD_Valid.php';
 
 
-
-$first = ConsoleReader("Это Функция сумматор, введите желаемое количество чисел, каждое через пробел");
-
-echo SumLogic($first);
-
+TddTest('ВВедите данные для проверки');
 
 
